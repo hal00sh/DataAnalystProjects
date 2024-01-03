@@ -46,8 +46,6 @@ JOIN CovidNews1.dbo.NashvilleHousing b
 	on a.ParcelID = b.ParcelID
 	AND a.[UniqueID ] <> b.[UniqueID ]
 Where a.PropertySplitAddress is null
-select PropertySplitAddress from NashvilleHousing
-
 
 Update a
 SET PropertySplitAddress = ISNULL(a.PropertySplitAddress,b.PropertySplitAddress)
