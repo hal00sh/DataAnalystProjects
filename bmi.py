@@ -1,5 +1,5 @@
 
-name = input("Whats yo name son: ")
+name = input("Enter your name: ")
 
 weight = int(input("Enter your weight in pounds: "))
 
